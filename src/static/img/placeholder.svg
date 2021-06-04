@@ -1,0 +1,5 @@
+<svg width="200" height="180"
+    xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="200" height="180" style="fill:#DEDEDE;"/>
+    <text x="50%" y="50%" font-size="18" text-anchor="middle" alignment-baseline="middle" font-family="monospace, sans-serif" fill="#555555">无图片</text>
+</svg>

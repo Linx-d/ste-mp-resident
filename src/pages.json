@@ -1,0 +1,243 @@
+{
+	"pages": [
+		// root
+		{
+			"path": "pages/root/root"
+		},
+		{
+			"path": "pages/root/300"
+		},
+		{
+			"path": "pages/root/500"
+		},
+		// register
+		{
+			"path": "pages/register/register"
+		},
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+                "navigationBarTitleText": "首页",
+                "enablePullDownRefresh": true
+            }
+			
+		},
+		{
+			"path": "pages/home/consultant/add",
+			"style": {}
+		},
+		{
+			"path": "pages/home/consultant/edit",
+			"style": {}
+		},
+		{
+			"path": "pages/home/registrar/index",
+			"style": {}
+		},
+		/*-------------broker start----------------*/
+		// task
+		// finish
+		{
+			"path": "pages/finish/sign",
+			"style": {}
+		},
+		{
+			"path": "pages/finish/info",
+			"style": {}
+		},
+		{
+			"path": "pages/finish/checkOut",
+			"style": {}
+		},
+		// work
+		{
+			"path": "pages/work/approveInfo",
+			"style": {}
+		},
+		{
+			"path": "pages/work/subscription",
+			"style": {}
+		},
+		{
+			"path": "pages/work/searchForm",
+			"style": {}
+		},
+		// {
+		// 	"path": "pages/work/veto",
+		// 	"style": {
+        //         "navigationBarTitleText": "已否决报备",
+        //         "enablePullDownRefresh": true
+        //     }
+		// },
+		{
+			"path": "pages/work/sub-evidence",
+			"style": {
+                "navigationBarTitleText": "上传证据链",
+                "enablePullDownRefresh": true
+            }
+		},
+		// client
+		// {
+		// 	"path": "pages/client/indexes",
+		// 	"style": {}
+		// },
+		// {
+		// 	"path": "pages/client/weixin",
+		// 	"style": {}
+		// },
+		// mine
+		{
+			"path": "pages/mine/home",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/detail/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/personal/personal",
+			"style": {}
+		},	
+		{
+			"path": "pages/mine/calculators/index",
+			"style": {}
+		},	
+		{
+			"path": "pages/mine/calculators/result"
+		},
+		// {
+		// 	"path": "pages/mine/broker/inviteBroker",
+		// 	"style": {}
+		// },
+		{
+			"path": "pages/mine/broker/report",
+			"style": {}
+		},
+		// index
+		
+		{
+			"path": "pages/index/visit",
+			"style": {}
+		},
+		{
+			"path": "pages/index/selectConsultant",
+			"style": {}
+		},
+		/*-------------broker end----------------*/
+		{
+			"path": "pages/home/consultant/consultant",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/news/news",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/home/news/editNews",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, 
+		{
+			"path": "pages/home/news/selectTag",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/home/switch/switch",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		//  {
+		// 	"path": "pages/home/broker/broker",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false
+		// 	}
+
+		// },
+		 {
+			"path": "pages/finish/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/media/video",
+			"style":{
+				"backgroundColor": "#000000"
+			}
+		},
+		/*-------------task detail----------------*/
+		{
+			"path": "pages/task/detail",
+			"style":{}
+		},
+		{
+			"path": "pages/task/album",
+			"style":{}
+		},
+		{
+			"path": "pages/task/licence",
+			"style":{}
+		},
+		{
+			"path": "pages/task/news",
+			"style":{}
+		},
+		{
+			"path": "pages/task/project",
+			"style":{}
+		},
+		{
+			"path": "pages/task/room",
+			"style":{}
+		}
+	],
+	"globalStyle": {
+		"mp-alipay": {
+			/* 支付宝小程序特有相关 */
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationBarTitleText": "屋掌柜驻场端",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^app-(.*)": "@/components/app-$1.vue", // 匹配components目录内的vue文件
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"usingComponts": true,
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "加载", //模式名称
+			"path": "pages/root/300", //启动页面
+			"query": "" //启动参数
+		}]
+	}
+
+}
